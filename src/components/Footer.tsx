@@ -37,6 +37,11 @@ const Footer = () => {
               leading force in global logistics, offering innovative solutions
               tailored to meet the unique needs of our diverse clientele.
             </p>
+            <p className="text-sm font-body leading-loose">
+              Choose GlovoShipping for a reliable, efficient, and
+              customer-focused shipping partner. Experience the difference with
+              a company that values your shipments as much as you do.
+            </p>
           </div>
           <div>
             <h4 className="font-body uppercase underline tracking-wider">

@@ -5,6 +5,10 @@ import ResponsiveMenu from "./ResponsiveMenu";
 
 export const links = [
   {
+    path: "/track-shipment",
+    title: "Track Shipment",
+  },
+  {
     path: "/about",
     title: "About",
   },
@@ -15,10 +19,6 @@ export const links = [
   {
     path: "/contact",
     title: "Contact",
-  },
-  {
-    path: "/track-shipment",
-    title: "Track Shipment",
   },
 ];
 
