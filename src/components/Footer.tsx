@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 
 const links = [
   {
+    path: "/track-shipment",
+    title: "Track Shipment",
+  },
+  {
     path: "/about",
     title: "About",
   },
@@ -12,10 +16,6 @@ const links = [
   {
     path: "/contact",
     title: "Contact",
-  },
-  {
-    path: "/track-shipment",
-    title: "Track Shipment",
   },
 ];
 
