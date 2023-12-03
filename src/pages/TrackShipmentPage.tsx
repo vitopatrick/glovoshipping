@@ -2,7 +2,7 @@ import { useState } from "react";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
-import { getDoc, doc, collection, getDocs } from "firebase/firestore";
+import { getDoc, doc } from "firebase/firestore";
 import { db } from "../firebase";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
