@@ -14,6 +14,14 @@ const addShipmentSchema = new yup.ObjectSchema({
   package_description: yup.string().required("Package description is required"),
   delivery_date: yup.string().required("Delivery Date is required"),
   status: yup.string().required(),
+  name_of_sender: yup.string().required("Name of Sender is required"),
+  receiver_address: yup.string().required("Receiver Address is Required"),
+  receiver_phone_number: yup
+    .string()
+    .required("Receiver phone number is required"),
+  estimated_time_of_address: yup
+    .string()
+    .required("Estimated time of address is required"),
 });
 
 type AddShipmentType = {
@@ -21,6 +29,10 @@ type AddShipmentType = {
   package_description: string;
   delivery_date: string;
   status: string;
+  receiver_address: string;
+  receiver_phone_number: string;
+  name_of_sender: string;
+  estimated_time_of_address: string;
 };
 
 const AddShipmentPage = () => {
@@ -83,6 +95,62 @@ const AddShipmentPage = () => {
             />
             <p className="text-red-600 text-sm capitalize">
               {errors.package_name?.message}
+            </p>
+          </div>
+          {/* name of sender */}
+          <div className="flex flex-col gap-2">
+            <label htmlFor="name of sender" className="font-body">
+              Name of sender
+            </label>
+            <input
+              type="text"
+              {...register("name_of_sender")}
+              className="border-neutral-400/30 border p-3 rounded font-body"
+            />
+            <p className="text-red-600 text-sm capitalize">
+              {errors.name_of_sender?.message}
+            </p>
+          </div>
+          {/* Receiver address */}
+          <div className="flex flex-col gap-2">
+            <label htmlFor="name of sender" className="font-body">
+              Receiver Address
+            </label>
+            <input
+              type="text"
+              {...register("receiver_address")}
+              className="border-neutral-400/30 border p-3 rounded font-body"
+            />
+            <p className="text-red-600 text-sm capitalize">
+              {errors.receiver_address?.message}
+            </p>
+          </div>
+          {/* Receiver phone number */}
+          <div className="flex flex-col gap-2">
+            <label htmlFor="name of sender" className="font-body">
+              Receiver Phone Number
+            </label>
+            <input
+              type="text"
+              {...register("receiver_phone_number")}
+              className="border-neutral-400/30 border p-3 rounded font-body"
+            />
+            <p className="text-red-600 text-sm capitalize">
+              {errors.receiver_phone_number?.message}
+            </p>
+          </div>
+          {/* Estimated Time of Delivery */}
+          <div className="flex flex-col gap-2">
+            <label htmlFor="name of sender" className="font-body">
+              Estimated Time of Delivery
+            </label>
+            <input
+              type="text"
+              {...register("estimated_time_of_address")}
+              className="border-neutral-400/30 border p-3 rounded font-body"
+            />
+            <p className="text-red-600 text-sm capitalize">
+              {errors.estimated_time_of_address?.message}
             </p>
           </div>
           {/* Package description */}
