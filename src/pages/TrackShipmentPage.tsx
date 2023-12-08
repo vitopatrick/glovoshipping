@@ -49,6 +49,7 @@ const TrackShipmentPage = () => {
     }
   };
 
+
   return (
     <>
       <Navbar />
@@ -103,6 +104,21 @@ const TrackShipmentPage = () => {
               <div className="flex font-body justify-between items-center py-3 border-neutral-50/10 border-b-2">
                 <h3>Estimated Delivery Date</h3>
                 <p>{shipment.delivery_date}</p>
+              </div>
+              {/* Send Name */}
+              <div className="flex font-body justify-between items-center py-3 border-neutral-50/10 border-b-2">
+                <h3>Name of sender</h3>
+                <p>{shipment.name_of_sender}</p>
+              </div>
+              {/* Receiver Phone Number */}
+              <div className="flex font-body justify-between items-center py-3 border-neutral-50/10 border-b-2">
+                <h3>Receiver Phone Number</h3>
+                <p>{shipment.receiver_phone_number}</p>
+              </div>
+              {/* Estimated Time of delivery */}
+              <div className="flex font-body justify-between items-center py-3 border-neutral-50/10 border-b-2">
+                <h3>Estimated time of delivery</h3>
+                <p>{shipment.estimated_time_of_address}</p>
               </div>
               {/* Status */}
               <div className="flex font-body justify-between items-center py-3 border-neutral-50/10 border-b-2">
